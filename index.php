@@ -36,13 +36,13 @@ if(!isset($_SESSION['usna']) && $_SESSION['usna'] == ''){
 </head>
     <body>
       
-        <div class="container">
-  <h2>Homepage</h2>                  
+  <div class="container">
+    <div class="tit">
+  <h2>Homepage</h2> </div>                
   <ul class="nav nav-tabs" role="tablist">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">HTML</a></li>
-    <li><a href="#" name="ed" id="ed">Profile Edit</a></li>
-    <li><a href="logout.php">Logout</a></li>        
+    <li class="active"><a href="#" >Home</a></li>
+    <li class="rem"><a href="#" name="ed" id="ed">Profile Edit</a></li>
+    <li class="rem"><a href="logout.php">Logout</a></li>        
   </ul>
   <div class="">
     <head>Contents</head>
