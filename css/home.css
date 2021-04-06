@@ -1,11 +1,26 @@
 body {
     background-color: skyblue;
 }
-.footer {
+.footer{
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: skyblue;
+        background-color: gray;
         color: white;
+}
+.tit{
+	background-color: gray;
+	text-align: center;
+	align-items: center;
+}
+.nav{
+	background-color: gray;
+}
+.rem{
+	background-color: pink;
+
+}
+.active{
+	background-color: lightgray;
 }
