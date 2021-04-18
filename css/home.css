@@ -1,26 +1,120 @@
-body {
-    background-color: skyblue;
+ html, body {
+    height: 100%;
+    width: 100%;
+}
+.co{
+  text-align: center;
+  align-items:center; 
+}
+.container{
+  background-color: transparent;
+  width: 100%;
+  align-items: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  background-color: white
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.buts{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.buts:hover, a:hover {
+  opacity: 0.7;
+}
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px lightgray;
+  z-index: 1;/*rgba(0,0,0,0.2)*/
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: gray;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color:lightgray;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: gray;
 }
 .footer{
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: gray;
+        height: 10%;
+        background-color: black;
         color: white;
 }
 .tit{
-	background-color: gray;
-	text-align: center;
-	align-items: center;
+  background-color: black;
+  text-align: center;
+  align-items: center;
 }
-.nav{
-	background-color: gray;
-}
-.rem{
-	background-color: pink;
 
-}
 .active{
-	background-color: lightgray;
+  background-color: lightgray;
+}
+.dropdown{
+  position: fixed;
+}
+.baa{
+    font-size: 40px; 
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }

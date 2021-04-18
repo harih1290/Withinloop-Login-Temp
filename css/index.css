@@ -1,0 +1,30 @@
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+.msa{
+	width: 50%;
+    background-color:rgb(30,55,90);
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.its{
+  text-decoration-color: white;
+  padding-bottom: 10%;
+}
+
+.was-validated{
+	padding: 10%;
+	background-color: rgb(0,10,50);
+	align-items: center;
+}
+.ress{
+  padding-top: 10%;
+}
