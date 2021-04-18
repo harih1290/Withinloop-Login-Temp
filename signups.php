@@ -2,9 +2,18 @@
 	include("conns.php");
     session_start();
     //print_r($_SESSION);
-	$usemail=mysqli_real_escape_string($conn,$_POST['nuseremail']);
-	$usname=mysqli_real_escape_string($conn,$_POST['nusername']);
-    $uspass=mysqli_real_escape_string($conn,$_POST['npassword']);
+    function validate($data){
+       $data = trim($data);
+       $data = stripslashes($data);
+       $data = htmlspecialchars($data);
+       return $data;
+    }
+	$usemail=validate($_POST['nuseremail']);
+    //mysqli_real_escape_string($conn,$_POST['nuseremail']);
+	$usname=validate($_POST['nusername']);
+    //mysqli_real_escape_string($conn,$_POST['nusername']);
+    $uspass=validate($_POST['npassword']);
+    //mysqli_real_escape_string($conn,$_POST['npassword']);
 
     $query = "select email from logins;";
     $selectedData = $conn->prepare($query);
@@ -49,10 +58,12 @@ if($userExistStatus == true ){
         "address" => $count[7],
     );
     $decodeJsonFileData[$_POST['nuseremail']] = $jsonDatas;
-    file_put_contents("users.json",json_encode($decodeJsonFileData));
+    file_put_contents("users.json",json_encode($decodeJsonFileData));*/
         $_SESSION['usna'] =$count[1] ;
         $_SESSION['usem'] =$count[2] ;
         $_SESSION['uspass']=$count[3];
+        $_SESSION['phonen'] =$count[6] ;
+        $_SESSION['adds']=$count[7];
         $cookie_name = $count[2];
         $cookie_value = $count[3];
         setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");

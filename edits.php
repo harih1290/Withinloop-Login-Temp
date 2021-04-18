@@ -30,7 +30,11 @@
         WHERE email ='".$userses."'";
 
         if (mysqli_query($conn, $query)) {
+            $_SESSION['usna']=$us;
+            $_SESSION['phonen']=$phonen;
+            $_SESSION['adds']=$adds;
             echo "true";
+
         } else {
             echo "false".$conn->error;
         }
