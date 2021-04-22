@@ -17,6 +17,20 @@ if(!isset($_SESSION['usna']) && $_SESSION['usna'] == ''){
     <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="withinloop">
+   <meta property="og:title" content="projects PHP">
+   <meta name="google-site-verification" content="IHXC4eslDkyxx2mv6OTYSS-mIhjuh2VUfTIhIKbT32E" />
+<meta name="og:title" content="HARIHARAN"> 
+<meta name="og:title" content="remohari"> 
+    <meta name="description" content="PHP free Projects Sample In github search just harih1290 withinloop-user">
+<meta name="description" content="I am Hariharan, founder of this blog. I am programming lover and professional blogger from India. I spend most of my time in doing programming and helping other programmers">    
+    <meta property="og:description" content="The official site for Android app developers. Provides the Android SDK tools and API documentation.
+">
+    <meta property="og:url" content="https://withinloop.coolpage.biz/">
+     <meta property="og:image" content="/img/imgs.jpg">
+<meta property="og:image:secure_url" content="/img/imgs.jpg">
+<meta property="og:site_name" content="Android Developers">
+   
 <script type="text/javascript" src="js/homes.js"></script>
 <link rel="stylesheet" type="text/css" href="css/home.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -58,13 +72,12 @@ if(!isset($_SESSION['usna']) && $_SESSION['usna'] == ''){
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Option <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#" id="ed" name="ed">Profile Edit</a></li>
-          <li><a href="#">Settings</a></li>
         </ul>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-      <li><a href="#"  id="lout" name="lout" ><span class="glyphicon glyphicon-log-in"></span> Login Out</a></li>
+      <li><a href="#"  id="lout" name="lout" ><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
     </ul>
   </div>
 </nav>

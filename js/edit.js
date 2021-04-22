@@ -1,5 +1,5 @@
  $(document).ready(function(){
-    alert("working");
+    alert("working hari");
     /*alert('DONE');
         var useremail =<%=Session["usem"] %>;
         var password = <%=Session["uspass"] %>;
@@ -20,12 +20,26 @@
                     }
                     
                 }
-            })
+            });
         }*/
+    $('input[name="phone"]').focusout(function(){ 
+        //var npa = $("#txt_pwd").val().trim();
+        var bb = document.getElementById("phone").value;
+        alert(bb);
+        if(bb == null || bb == ""){
+            var a=document.getElementById("phoneval");
+            a.innerHTML = "Please Enter your Phone Number";
+        }
+        if(bb.length<=10 || bb.length>=0){
+            var a=document.getElementById("phoneval");
+            a.innerHTML = "Please Enter Your Valid 10 Digit Phone Number";
+        }
+      console.log(bb);
+    });
 
     $("#edit_submit").click(function() {
         console.log("checking");
-        alert("WELCOME");
+        //alert("WELCOME");
         var username = $("#txt_uname").val().trim();
         var lastname = $("#lastns").val().trim();
         var dateb = $("#dobs").val().trim();
@@ -34,7 +48,8 @@
         //var useremail =<%=Session["usem"] %>;
         //var password = <%=Session["uspass"] %>;
         //alert(useremail);
-        //if( useremail != "" && password != "" ){
+        //var xy = document.getElementById("phone").value;
+        //if( xy>=10 && xy<=0 ){
              $.ajax({
                 url:'edits.php',
                 type:'POST',
@@ -54,6 +69,5 @@
             });
             
         //}
-       
     });
 });

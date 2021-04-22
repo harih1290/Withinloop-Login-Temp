@@ -46,19 +46,19 @@ if($userExistStatus == true ){
 
     $count = $row;
     if($count > 0){
-        $rawJsonFileData = file_get_contents("users.json");
-        $decodeJsonFileData = json_decode($rawJsonFileData,true);
-        $jsonDatas = array(
-        "Name" => $count[1],
-        "Email" =>$count[2],
-        "lastname" => $count[4],
-        "Password" => $count[3],
-        "dob" => $count[5],
-        "phone" => $count[6],
-        "address" => $count[7],
-    );
-    $decodeJsonFileData[$_POST['nuseremail']] = $jsonDatas;
-    file_put_contents("users.json",json_encode($decodeJsonFileData));*/
+        //$rawJsonFileData = file_get_contents("users.json");
+        //$decodeJsonFileData = json_decode($rawJsonFileData,true);
+       // $jsonDatas = array(
+        //"Name" => $count[1],
+        //"Email" =>$count[2],
+       // "lastname" => $count[4],
+       // "Password" => $count[3],
+       // "dob" => $count[5],
+       // "phone" => $count[6],
+        //"address" => $count[7],
+    //);
+    //$decodeJsonFileData[$_POST['nuseremail']] = $jsonDatas;
+    //file_put_contents("users.json",json_encode($decodeJsonFileData));*/
         $_SESSION['usna'] =$count[1] ;
         $_SESSION['usem'] =$count[2] ;
         $_SESSION['uspass']=$count[3];

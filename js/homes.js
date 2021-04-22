@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	$("#ed").click(function () {
         window.location="Edit.php";
         

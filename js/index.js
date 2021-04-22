@@ -30,14 +30,10 @@ $(document).ready(function(){
             var a=document.getElementById("passcheck");
             a.innerHTML = "Please Enter your the password";
         }
-        if(aa.length<5 || aa.length>25){
+        if(aa.length>0){
             var a=document.getElementById("passcheck");
-
-            a.innerHTML = "Enter Your Password length Above 6 digits";
-        }else{
-            var a=document.getElementById("passcheck");
-            a.innerHTML = "Password Valid";
             b=true;
+            a.innerHTML = "password Valid";
         }
       
     });

@@ -57,8 +57,7 @@ if(!isset($_SESSION['usna']) && $_SESSION['usna'] == ''){
         </div>
         <div class="form-group">
             <input type="tel" class="form-control" id="phone" name="phone" placeholder="phone Number" />
-            <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.
+            <div id="phoneval" name="phoneval"></div>
         </div>
         <div class="form-group">
         	<textarea class="form-control" id="address" name="address" placeholder="Address"></textarea>

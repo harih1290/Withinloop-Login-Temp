@@ -28,12 +28,12 @@ $(document).ready(function(){
     });
 
 
-$('input[name="txt_pwd"]').focusout(function(){ 
-    var npa = $("#txt_pwd").val().trim();
-    var aa = document.getElementById("txt_pwd").value;
+$('input[name="pwd"]').focusout(function(){ 
+    //var npa = $("#txt_pwd").val().trim();
+    var aa = document.getElementById("pwd").value;
     //lert();
     if(aa == null || aa == ""){
-        var a=document.getElementById("passs");
+            var a=document.getElementById("passs");
             a.innerHTML = "Please Enter your the password";
     }
     if(aa.length<5 || aa.length>25){
@@ -48,7 +48,7 @@ $('input[name="txt_pwd"]').focusout(function(){
 });
 $('input[name="retxt_pwd"]').focusout(function(){
             var nre = $("#retxt_pwd").val().trim();
-            var nra = $("#txt_pwd").val().trim();
+            var nra = $("#pwd").val().trim();
             //var aab = document.getElementById("txt_pwd").value;
             if(nre == nra){
                 var aaa=document.getElementById("passcheck");
